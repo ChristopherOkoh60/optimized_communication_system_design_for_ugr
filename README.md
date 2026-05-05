@@ -68,7 +68,7 @@ DQN Training Architecture: <br/>
 - <b>There was a continuous adjusting and tuning of the switching penalties and reward for LoRa usage due to the need for balance while managing the trade-off between throughput vs. energy consumption and signal adaptability and stability.  </b>
 
 <b>(5)</b>
-<b>•	Evaluate system performance and analysis of trade-offs.</b>
+<b>Evaluate system performance and analysis of trade-offs.</b>
 
 <p align="center">
 Complete Result Outlook <br/>
