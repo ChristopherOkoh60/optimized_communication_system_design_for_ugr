@@ -1,4 +1,4 @@
-<h1>Optimization of an UGR Communication System</h1>
+<h1>Optimization of a UGR Communication System</h1>
 
 
 <h2>Description</h2>
