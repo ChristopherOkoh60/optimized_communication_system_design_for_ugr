@@ -52,10 +52,20 @@ DQN Training Architecture: <br/>
 <img src="https://i.postimg.cc/HkMs3M2y/1e2bc172-ac64-4815-97a4-5b3badd1f1f0i.png" height="60%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
-<b>Step 3</b>
+<b>(3)</b>
+<b>Model real network conditions with parameters like Received Signal Strength Indicator (RSSI), signal degradation, and temporal variations (periodic LoRa scanning).</b>
 
-- <b>Perform testing to ensure that the robot learned the trajectory pathway and obstacle detection</b>
-- <b>Evaluate the testing outcomes</b>
+- <b>The signal quality indicators for each of the communication links are measured in this block to determine the dominant signal. </b>
+- <b>Other metrics collected are the signal-to-noise ratio (SNR), packet loss to determine reliability, and latency for delay. Due to noise fluctuations, the RSSI undergoes filtering. </b>
+<p align="center">
+<br/>
+ <img src="https://i.postimg.cc/25ZYCNJD/Screenshot-2026-05-05-190318.png" height="15%" width="35%" alt="Disk Sanitization Steps"/>
+<br />
+
+<b>(4)</b>
+<b>Ensure reduced switching behavior with considerable balanced performance metrics.</b>
+
+- <b>There was a continuous adjusting and tuning of the switching penalties and reward for LoRa usage due to the need for balance while managing the trade-off between throughput vs. energy consumption and signal adaptability and stability.  </b>
 
 <p align="center">
 Results - (a) Action-Distribution, (b) Sensor Over Time, (c) Robot Motion Trajectory: <br/>
