@@ -6,6 +6,61 @@ This project utilizes a point-to-point type of communication system with multipl
 <br />
 
 
+<h2>Languages and Utilities Used</h2>
+
+- <b>Python</b>
+- <b>Pandas</b>
+- <b>PyTorch</b>
+- <b>NumPy</b>
+
+<h2>Environment</h2>
+
+- <b>Wokwi</b>
+- <b>Google Colab</b>
+
+<h2>Project walk-through:</h2>
+<b>(1)</b>
+<b>Design a robust communication switching architecture utilizing multiple communication technologies (LoRa, Wi-Fi, and 5G) in real-time.</b>
+
+- <b>For intelligent communication adaptation and energy-efficient networking in a SAR robot application, this project has been designed to include the transmission of three communication networks—LoRa, Wi-Fi, and 5G—from a base station to the field robot. </b>
+- <b>These communication links support the robot’s performance for control, localization, navigation, and real-time data transmission. But due to inefficiencies depending on communication links, this design considers network communication switching based on signal strength using the RL algorithm. </b>
+
+<p align="center">
+Communication links (LoRa, Wi-Fi, 5G) Transmission <br/>
+<img src="https://i.postimg.cc/XJ4x90gw/Picture2.png" height="30%" width="50%" alt="Disk Sanitization Steps"/>
+<br />
+
+<p align="center">
+Communication links (LoRa, Wi-Fi, 5G) Transmission <br/>
+<img src="https://i.postimg.cc/P5KFKJCH/Picture3.png" height="30%" width="50%" alt="Disk Sanitization Steps"/>
+<br />
+
+
+<b>Step 2</b>
+
+- <b>Train the DQN model with the data collected using a well-structured set of hyperparameters</b>
+- <b>Ensure the reward functions are continuously tuned to improve stability and convergence</b>
+
+<p align="center">
+DQN Training Network Architecture: <br/>
+<img src="https://i.postimg.cc/TY2Y6qSN/Picture1.png" height="50%" width="70%" alt="Disk Sanitization Steps"/>
+<br />
+
+<b>Step 3</b>
+
+- <b>Perform testing to ensure that the robot learned the trajectory pathway and obstacle detection</b>
+- <b>Evaluate the testing outcomes</b>
+
+<p align="center">
+Results - (a) Action-Distribution, (b) Sensor Over Time, (c) Robot Motion Trajectory: <br/>
+<img src="https://i.postimg.cc/Hs2GTq54/Screenshot-2026-05-05-022659.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+<br />
+
+<b>Conclusion</b>
+
+<b>This research project has applied the DQN model for buggy robot collision avoidance during autonomous navigation in a dynamic space. The robot effectively learned to move, avoid obstacles, and attempt the provided structured pathway based on sensor input and reward design. The trained outcome revealed that DQN’s efficiency is largely dependent on data quality, reward tuning, and system calibration.</b>
+
+
 
 
 <!--
