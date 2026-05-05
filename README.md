@@ -31,19 +31,25 @@ Communication links (LoRa, Wi-Fi, 5G) Transmission <br/>
 <br />
 
 <p align="center">
-Communication links (LoRa, Wi-Fi, 5G) Transmission <br/>
-<img src="https://i.postimg.cc/P5KFKJCH/Picture3.png" height="30%" width="50%" alt="Disk Sanitization Steps"/>
+System Communication Architecture <br/>
+<img src="https://i.postimg.cc/P5KFKJCH/Picture3.png" height="40%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 
+<p align="center">
+Data generation through ESP32 MCU <br/>
+<img src="https://i.postimg.cc/63YrMg0N/Screenshot-2026-05-05-130802.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<br />
 
-<b>Step 2</b>
+<b>(2)</b>
+<b>Implement a DQN model that will learn optimal communication decisions while interacting with the environment and cumulative rewards.</b>
 
-- <b>Train the DQN model with the data collected using a well-structured set of hyperparameters</b>
-- <b>Ensure the reward functions are continuously tuned to improve stability and convergence</b>
+- <b>The current state is fed into the network as the input, and it learns to estimate the Q values (corresponding to each action) for that state.</b>
+- <b>The MCU collects state-transition tuples consisting of state (s), action (a), reward (r), and next state(s’) to interact and learn about the environment. </b>
+- <b>The network is trained using the Bellman equation to approximate optimal Q-values, Q(s, a), enabling the MCU to learn the dynamic network switching through RL. </b>
 
 <p align="center">
-DQN Training Network Architecture: <br/>
-<img src="https://i.postimg.cc/TY2Y6qSN/Picture1.png" height="50%" width="70%" alt="Disk Sanitization Steps"/>
+DQN Training Architecture: <br/>
+<img src="https://i.postimg.cc/HkMs3M2y/1e2bc172-ac64-4815-97a4-5b3badd1f1f0i.png" height="60%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
 <b>Step 3</b>
