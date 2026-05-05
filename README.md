@@ -67,14 +67,24 @@ DQN Training Architecture: <br/>
 
 - <b>There was a continuous adjusting and tuning of the switching penalties and reward for LoRa usage due to the need for balance while managing the trade-off between throughput vs. energy consumption and signal adaptability and stability.  </b>
 
+<b>(5)</b>
+<b>•	Evaluate system performance and analysis of trade-offs.</b>
+
 <p align="center">
-Results - (a) Action-Distribution, (b) Sensor Over Time, (c) Robot Motion Trajectory: <br/>
-<img src="https://i.postimg.cc/Hs2GTq54/Screenshot-2026-05-05-022659.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+Complete Result Outlook <br/>
+<img src="https://i.postimg.cc/d16PQ22p/Screenshot-2026-05-05-195917.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+<br />
+
+- <b>The system’s high PSR at 94.2% is an indication of effective avoidance of poor signal conditions while showing that the model leverages LoRa’s advantages without overdependence with a preference at 82.1%.  </b>
+
+<p align="center">
+Result Analysis <br/>
+<img src="https://i.postimg.cc/g063P4Wx/Screenshot-2026-05-05-200835.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <br />
 
 <b>Conclusion</b>
 
-<b>This research project has applied the DQN model for buggy robot collision avoidance during autonomous navigation in a dynamic space. The robot effectively learned to move, avoid obstacles, and attempt the provided structured pathway based on sensor input and reward design. The trained outcome revealed that DQN’s efficiency is largely dependent on data quality, reward tuning, and system calibration.</b>
+<b> From the outcome, the system demonstrates having successfully adapted to the trade-off between long-range signal transmission, low-power communication, and high-bandwidth substitutes. Specifically, the agent reveals robust capability in avoiding weak network links and ensuring reliable connectivity. Although the evaluation also exposed a significant limitation, which is related to switching frequency not yielding an obvious performance improvement, as shown by the amount of fluctuation in the learned policy.</b>
 
 
 
